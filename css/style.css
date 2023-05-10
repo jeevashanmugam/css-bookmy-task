@@ -1,0 +1,633 @@
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+	@media(min-width:320px){
+		
+		.container{
+			width:100%;
+			margin: 0 auto;
+		}
+		/* BOOKMY SHOW HEADER SEC START */
+		.bookmyshow-sec{
+		background-color:#333545;
+		display:none;
+	}
+	/* FOOTER SECTION START */
+	
+	/* FOOTER CUSTOMER SECTION START */
+		.footer-sec ,.footer-customer-sec ,.footer-link-sec,.nav-sec{
+			display:none;
+		}
+		.movie-col-sec{
+			width:100%;
+			    margin-bottom: 30px;
+		}
+		
+	
+	
+	}
+	
+	
+	
+	
+	@media(min-width:620px){
+
+			.container{
+			width:100%;
+			margin: 0 auto;
+		}
+		/* BOOKMY SHOW HEADER SEC START	 */
+		.bookmyshow-sec{
+		background-color:#333545;
+		display:none;
+		}
+		/* FOOTER SECTION START */
+		.footer-sec{
+		display:none;
+		}
+		/* FOOTER SECTION END */
+		
+		
+		/* FOOTER CUSTOMER SECTION START */
+		.footer-sec ,.footer-customer-sec ,.footer-link-sec,.nav-sec{
+			display:none;
+		}
+		.nav-sec{
+		display:block;	
+		}	
+		
+		
+		.movie-row-sec{
+			display:flex;
+			justify-content: space-between;	
+		}
+		.movie-col-sec{
+			width:40%;
+			margin-bottom: 30px;
+		}
+	}
+	
+	
+	
+	@media(min-width:1000px){
+	
+	.container{
+		width:80%;
+		margin: 0 auto;
+	}
+		/* BOOKMY SHOW HEADER SEC START	 */
+		.bookmyshow-sec{
+		background-color:#333545;
+		display:block;
+	}
+		
+		
+		/* FOOTER SECTION START */
+		.footer-sec{
+		display:block;	
+			
+		}
+		
+		.footer-sec{
+		background-color: rgb(49, 48, 53);
+		/* color: rgb(255, 255, 255); */
+		}
+		.footer-col-img{
+		display: flex;
+		align-items: center;
+		gap: 17px;	
+		}
+		.footer-col-img img{
+			max-width:100%;
+		}
+		.row-list-footer{
+			color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 0;	
+		}
+		.contact-link a{
+		background-color: rgb(236, 94, 113);
+		border-radius: 3px;
+		padding: 10px 20px;
+		text-decoration: none;
+		color: rgb(255, 255, 255);	
+		display:inline-block;	
+		}
+	
+	/* FOOTER SECTION END */
+	/* FOOTER CUSTOMER SECTION START */
+		.footer-customer-sec ,.footer-link-sec, .nav-sec{
+			display:block;
+		}
+		
+		
+		.movie-row-sec{
+	display:flex;
+	justify-content: space-between;	
+	}
+	
+		.movie-col-sec{
+     width: 18%;
+    overflow: hidden;
+    font-size: 18px;
+	}
+	}
+	
+	
+	
+	
+	/* BOOKMY SHOW HEADER SEC START */
+
+	.menu{
+	 padding: 15px 0;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+	}
+	.menu .col-sec{
+	display: flex;
+    gap: 15px;
+	align-items: center;
+	}
+	.bms-link{
+		
+	}
+	.menu .bms-link a img{
+		width:100px;
+		/* width:100%; */
+		vertical-align:middle;
+	}
+	.header-search{
+	border: 1px solid #808080e8;
+    width: max-content;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.header-search input{
+	    width: 400px;
+    padding: 5px;
+    border: none;
+    outline: none;
+	}
+	.state-name {
+	display: flex;
+    align-items: center;
+    color:#fff;
+	position:relative;
+    }
+	.link-hover{
+		text-decoration:none;
+		color:#fff;
+	}
+	.state-name >i{
+		color:#fff;
+		margin:8px;
+	}
+	
+	
+	/* DROPDOWN SECTION START */
+	
+	
+	.accordion-sec{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 15px;
+    background-color: white;
+	z-index:1;	
+	opacity:0;
+	visibility:hidden;
+	transition:0.5s;
+	}
+	.state-name:hover .accordion-sec {
+	opacity:100%;
+	visibility:visible;
+	top: 25px;
+	transition:0.5s;
+	position:absolute;
+	/* display:block; */
+	}	
+	.accordion-sec .acc-heading{
+	color: #323131;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+	}
+	.dropdown-sec{
+	border: 1px solid #808080e8;
+    width: max-content;
+    border-radius: 5px;
+    padding: 5px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;		
+	}
+	.dropdown-sec i{
+	color: black;
+    font-size: 19px;
+	}
+	.dropdown-sec input{
+	width: 890px;
+    padding: 5px;
+    border: none;
+    outline: none;
+	}
+	.drop-img {
+     /* width: 70px; */
+    /* gap: 13px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+		
+	}
+	.city-img{
+	width:8%;
+		
+	}
+	.city-img a{
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;		
+	}
+	.city-img img{
+		width:100%;
+		
+	}
+	/* drpodown sec end */
+	
+	
+
+	
+	.sign-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	}
+	.sign-link a{
+	text-decoration: none;
+    color: #fff;
+    background-color: #F84464;
+    display: inline-block;
+    padding: 4px 15px;
+    border-radius: 5px;	
+	}	
+	.sign-link i{
+	color: #fff;
+	font-size: 23px;
+	}
+
+	/* BOOKMY SHOW HEADER SEC END */
+	
+	
+	/* NAV SECTION START */
+	.nav-sec{
+		background-color:#222539;
+		    padding: 10px 0;
+	}
+	.nav-sec nav{
+	display:flex;
+	justify-content: space-between;
+	}
+	.nav-sec nav ul{
+	display: flex;
+    list-style-type: none;
+    gap: 20px;
+    color: #ffffff9c;
+	}
+	.nav-sec nav li{
+	position:relative;
+	}
+	.nav-sec ul .new{
+	    color: rgb(231, 54, 77);;
+    font-size: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 32px;
+    font-weight: 500;
+	}
+	nav ul li:hover{
+	color:#ffff;		
+	}
+	
+	/* NAV SECTION END */
+	
+	
+	/* GV IMAGE SECTION START */
+	.gv-img{
+		margin: 20px 0;
+	}
+	.gv-img img{
+	width:100%;
+	}
+	.left-mover i {
+    border-radius: 6px 0 0 6px;
+    padding: 10px;
+    background-color: #80808066;
+    font-size: 20px;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    top: 108px;
+	right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+	.gv-img-section{
+	position:relative;	
+	}
+	.right-mover i{
+        border-radius: 0 6px 6px 0;
+    padding: 10px;
+    background-color: #80808066;
+    font-size: 20px;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    top: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+	
+	/* GV IMAGE SECTION END */
+	
+	
+	/* RECOMMENDED SECTION START */
+	
+
+	.movie-sec .movie-txt-sec{
+	display:flex;	
+	justify-content: space-between;
+    align-items: center;	
+	}
+	.movie-sec .movie-txt-sec a{
+	    text-decoration: none;
+    font-weight: 600;
+    color: #ff0e0e9e;	
+	}
+	.movie-sec .movie-txt-sec a i{
+	font-size: 9px;	
+	}
+	
+	
+	.movie-col-sec h1{
+    font-size: 21px;
+    word-break: break-word;
+    padding: 10px 0;	
+	}
+	.movie-col-sec img{
+	width:100%;
+	border-radius:5px;
+	}
+	
+	/* RECOMMENDED SECTION END */
+	
+	
+	/* STEAM SECTION START */
+	.stream-img {
+		padding: 64px 0;
+	}
+	.stream-img img{
+		width:100%;
+	}
+	/* STEAM SECTION END */
+	
+	
+	
+	/* LIVE EVENTS SECTION START */
+	.live-txt{
+	padding: 32px 0 64px	
+	}
+	.live-txt h1{
+	padding-bottom:10px	
+	}
+	
+	.live-row-sec{
+	display: flex;
+    justify-content: space-between;
+	}
+	.col-img {
+		width:18%;
+	}
+	.col-img img{
+		width:100%;
+		border-radius: 15px;
+	}
+	/* LIVE EVENTS SECTION END */
+	
+	/* PREMIER SECTION START */
+	.premier-sec{
+	background-color: #2B3149;	
+	}
+	
+	.pre-img {
+		width:100%;
+	}
+	.pre-img img{
+		width:100%;
+	}
+	.pre-txt{
+	/* width:50%	 */
+	}
+	.pre-title {
+		padding:10px 0;
+		color:#ffff;
+	}
+	.pre-row-img{
+	display: flex;
+    gap:30px;
+		
+	}
+	.pre-col-sec{
+		width:18%;
+	}
+	.pre-col-sec img{
+	width:100%;	
+	border-radius:15px;
+	}
+	.pre-img-link a{
+    text-decoration: none;
+	color: white;
+    padding: 5px 0;
+    display: flex;
+    font-size: 17px;
+    line-height: 14px;
+}	
+	}
+	/* PREMIER SECTION END */	
+	
+	
+	/* TREANDING SECTION START */
+	.txt-trend-sec> h1{
+	font-size: 26px;
+    margin-top: 30px;
+    padding: 10px 0;
+	}
+	.txt-trend-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 48px;
+	}
+	.row-trend-sec{
+	display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+	}
+	.col-trend-sec{
+	    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+	padding: 16px;
+	}
+	.col-trend-sec a{
+	text-decoration: none;	
+	}
+	.col-trend-sec h1{
+	    color: #ff0000b0;
+    font-size: 20px;
+}	
+	}
+	.col-trend-sec p{
+	color:gray;	
+	}
+		
+	/* TREANDING SECTION END */
+	
+	
+
+	
+	/* FOOTER CUSTOMER SECTION START */
+	
+	.footer-customer-sec{
+	
+	background-color: rgb(64, 64, 67);
+	}
+	.footer-icon-sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+		
+	}
+	.cust-icon {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;	
+	}
+	.cust-icon i{
+   font-size: 35px;
+    color: #ffffff78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;		
+	}
+	.cust-icon p{
+    color: #ffffff78;		
+	font-size:11px;
+	}
+	.cust-icon:hover i, .cust-icon:hover  p {
+	color:#fff;
+		
+	}	
+	
+	/* FOOTER CUSTOMER SECTION END */
+	
+	
+	/* FOOTER LINK SECTION START */
+	.footer-link-sec{
+	background-color: rgb(49, 48, 53);	
+	letter-spacing: 0.1px;
+    padding-top: 20px;
+	}
+	.footer-link-sec h1{	
+	color: rgb(165, 165, 165);
+	padding: 15px 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+	}
+	.movies-link-sec  a{
+    color: #878787b3;
+    text-decoration: none;
+    border-right: 2px solid #808080fa;
+    font-size: 12px;
+    padding-right: 6px;
+    margin: 0 5px 5px 0px;	
+	}
+	.movies-link-sec a:last-child  {
+	border:none;
+	}
+	.movies-link-sec a:hover  {
+	color:#ffff;
+	}
+	
+	.bms-img-link {
+		width:100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	    border: 2px solid #313035;
+	}
+	.bms-img-link a img{
+		width:100%;
+	}
+	.border-line{
+	    border-top: 2px solid #808080c7;	
+		position:relative;
+		    margin: 50px 0;
+	}
+	
+	.footer-social-sec{
+	    padding: 12px 0 ;
+    text-align: center;	
+		
+	}
+	.footer-social-link{
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;	
+	}
+	.footer-social-link a{
+	text-decoration: none;
+    font-size: 27px;
+    color: #ffffff5c;
+    display: inline-block;	
+	}
+	.footer-social-link a i{
+	color: #ffffff5c;	
+	}
+	.footer-social-link a i:hover{
+	color:#ffff;	
+	}
+	.fooetr-copyright {
+	padding: 40px 0;
+	}
+	.fooetr-copyright p{
+	color: #ffffff5c;	
+	font-size:small;
+	}
+	/* FOOTER LINK SECTION END */
+	
+	
+	
+	
+	
